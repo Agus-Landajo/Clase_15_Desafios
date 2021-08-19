@@ -54,73 +54,46 @@
         </div>
         
 
-        <form action="#">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputUsername" class="form-label">Nombre</label>
+            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
           </div>
-            <fieldset>
-                <legend>Información del Usuario</legend>
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="" required>
-
-                </div>
-                
-                <div>
-                    <label for="userMail">Correo</label>
-                    <input type="email" name="userMail" id="" placeholder="ejemplo@gmail.com" required>
-                </div>
-                
-                <div>
-                    <label for="userPassword">Contraseña</label>
-                    <input type="password" name="userPassword" id="" required>
-                </div>
-                
-                <div>
-                    <select name="status" id="" required>
-                        <option value="" disabled selected>Estado civil</option>
-                        <option value="L">Soltero/a</option>
-                        <option value="M">Casado/a</option>
-                        <option value="S">Viudo/a</option>
-                        <option value="">Divorciado/a</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label for="news">¿Querés recibir novedades via mail acerca de descuentos,promociones y más?</label>
-                    <input type="checkbox" name="news" id="">
-                </div>
-                
-                <div>
-                    <label for="comments">Comentarios</label>
-                    <br>
-                    <textarea name="comments" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="reset" value="resetear formulario">
-                    <input type="submit"  value="subir formulario" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-                </div>
-
-                <div class="modal fade alertaContacto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content alertaContacto__body">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Felicitaciones!</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          Tus datos fueron ingresados, dentro de poco nos contactaremos!
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary alertaContacto__boton" data-bs-dismiss="modal">Salir</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-            </fieldset>
-
-
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+          <label for="exampleDataList" class="form-label">¿En qué producto estas interesado?</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." required>
+            <datalist id="datalistOptions">
+              <option value="Sillón Skarpo">
+              <option value="Sillón Miami">
+              <option value="Reposera Toronto">
+              <option value="Silla Eames">
+              <option value="Mesa Chicago">
+              <option value="Otro"></option>
+              <option value="No estoy interesado por el momento"></option>
+            </datalist>
+          </div>
+            <div class="mb-3">
+            <label for="exampleColorInput" class="form-label">Elegí un color que quieras que sumemos a nuestro repertorio</label>
+              <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+           </div>
+           <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Subir</button>
+          </div>
         </form>
+      
     </main>
     <div class="container-fluid">
       <div class="row">
