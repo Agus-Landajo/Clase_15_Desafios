@@ -45,12 +45,13 @@ nav{
 form{
     border: 2px solid;
     margin: 15px 10px;
+    background-color: $bgcolor-secundario;
     div{
         padding-left: 10px;
         padding-right: 10px;
     }
     input, select, textarea{
-        background-color: rgba(212, 195, 177, 0.938) !important;
+        background-color: rgba(255, 240, 223, 0.938) !important;
         padding-left: ($paddingBase)-10;
     }
     
