@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F3E1D2;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 1;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: #D4F1F4;
+}
+
+nav {
+  background-color: #345153;
+}
+
+.pie {
+  background-color: #345153;
+  color: white;
+  padding: 15px 10px;
+  margin-top: 15px;
+}
+
+.pie__titulo {
+  font-weight: bold;
+}
+
+.pie__contactos {
+  font-weight: lighter;
+}
+
+form {
+  border: 2px solid;
+  margin: 15px 10px;
+}
+
+form fieldset {
+  height: 90vh;
+  border: 1px dotted;
+  background-color: #dfcec1;
+  margin: 10px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+form input, form select, form textarea {
+  background-color: #F3E1D2;
+  padding-left: 5px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+h2 {
+  font-size: 30px;
+}
+
+h3, h4 {
+  font-size: 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.prologo {
+  background-color: #dfcec1;
+  padding: 10px;
+  border-bottom: 2px solid #dacab6;
+}
+
+.prologo__titulo {
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-text-decoration: underline 1px black;
+          text-decoration: underline 1px black;
+}
+
+.indexPrincipal {
+  background-color: #dfcec1;
+  border-bottom: 2px solid #ccb290;
+  padding-top: 5px;
+}
+
+.indexPrincipal__titulo {
+  color: #3f413e;
+  font-size: 25px;
+}
+
+.indexSecundario__columnas {
+  text-align: center;
+}
+
+.indexSecundario__columnas--imagen {
+  margin-top: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.galeria {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.galeria__productos {
+  font-weight: bold;
+}
+
+.historia {
+  padding: 10px;
+}
+
+.historia__titulo {
+  font-weight: bold;
+}
+
+.productos {
+  margin: 10px;
+}
+
+.productos .col-md {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productos__secciones {
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.productos__secciones--titulo {
+  background-color: #dfcec1;
+}
+
+.alertaContacto h5 {
+  font-weight: bold;
+}
+
+.alertaContacto__boton {
+  background-color: #345153;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: #345153;
+  }
+  nav li {
+    max-width: 18%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    border: 1px solid #d2d3df;
+  }
+  nav li:hover {
+    background-color: #243638;
+    -webkit-transform: scale(105%);
+            transform: scale(105%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .productos .col-md {
+    border-right: 2px solid black;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .indexSecundario__columnas {
+    border-bottom: 2px solid #705c36;
+  }
+  .indexSecundario__columnas p {
+    padding-top: 10px;
+  }
+  .row footer {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,191 @@
+@import "./partials/colores.scss";
+@import "./partials/fonts.scss";
+@import "./partials/otros.scss";
+
+$paddingBase:15px;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bgcolor-body;
+    font-family: $font-body;
+    word-spacing: 1;
+}
+
+header{
+    text-align: center;
+    color: $color-header-footer;
+    background-color: $bgcolor-header;
+
+}
+
+nav{
+    background-color: $bgcolor-footer-nav;
+}
+    
+.pie{
+    background-color: $bgcolor-footer-nav;
+    color: $color-header-footer;
+    padding: $paddingBase ($paddingBase)-5;
+    margin-top: 15px;
+        &__titulo{
+            font-weight: $font-bold;
+        }
+        &__contactos{
+            font-weight: $font-light;
+        }
+}
+    
+
+
+form{
+    border: 2px solid;
+    margin: 15px 10px;
+    fieldset{
+        height: 90vh;
+        border: 1px dotted;
+        background-color: $bgcolor-secundario;
+        margin: 10px;
+        padding: $paddingBase;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    input, select, textarea{
+        background-color: $bgcolor-body;
+        padding-left: ($paddingBase)-10;
+    }
+    
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+h2{
+    font-size: $h2-size;
+}
+
+h3, h4 {
+    font-size: $h3h4-size;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.prologo{
+    background-color: $bgcolor-secundario;
+    padding: ($paddingBase)-5;
+    border-bottom: 2px solid rgb(218, 202, 182);
+    &__titulo{
+        font-size: $h2-size;
+        font-weight: $font-bold;
+        text-decoration: underline 1px $color-main;
+    }
+}
+
+.indexPrincipal{    
+    background-color: $bgcolor-secundario;
+    border-bottom: 2px solid rgb(204, 178, 144);
+    padding-top: ($paddingBase)-10; 
+    &__titulo{
+        color: rgb(63, 65, 62);
+        font-size: 25px;
+    }
+}
+
+.indexSecundario{
+    &__columnas{   
+        text-align: center;  
+        &--imagen{
+            margin-top: 20px;
+            height: $columna-img-size;
+            width: $columna-img-size;
+        }  
+    }
+}
+
+
+
+.galeria{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &__productos{
+        font-weight: $font-bold;
+    }
+}
+
+.historia{
+    padding: ($paddingBase)-5;
+    &__titulo{
+        font-weight: $font-bold;
+    }
+}
+
+.productos{
+    .col-md{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    margin: 10px;
+    &__secciones{
+       border: 2px solid black;
+       margin-top: 10px;   
+
+            &--titulo{
+                background-color: $bgcolor-secundario;
+            }
+        
+    }
+    
+}
+
+.alertaContacto{
+    h5{
+        font-weight: $font-bold;
+    } 
+    &__boton{
+        background-color: $bgcolor-footer-nav;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:768px){
+    nav{
+        background-color: $bgcolor-footer-nav;
+        li{
+            max-width: 18%;
+            flex-grow: 1;
+            border: 1px solid rgb(210, 211, 223);
+        }
+    
+    }
+    nav li:hover{
+        background-color:  #243638;
+        transform: scale(105%);
+        transition: all 1s;
+    }
+    .productos{
+        .col-md{
+            border-right: $productos-border;
+        }
+    }
+}
+
+@media only screen and (max-width:576px){
+    .indexSecundario__columnas{
+        border-bottom: 2px solid rgb(112, 92, 54);       
+        p{
+       padding-top: ($paddingBase)-5;
+         }
+    }
+   .row footer{
+       margin-top: 0;
+       text-align: center;
+   }
+}
