@@ -162,6 +162,15 @@ h3, h4 {
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 576px) {
+  .galeria {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 700px;
+    max-height: 700px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   nav {
     background-color: #345153;
