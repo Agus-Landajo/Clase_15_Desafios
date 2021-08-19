@@ -45,19 +45,12 @@ nav{
 form{
     border: 2px solid;
     margin: 15px 10px;
-    fieldset{
-        height: 90vh;
-        border: 1px dotted;
-        background-color: $bgcolor-secundario;
-        margin: 10px;
-        padding: $paddingBase;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
+    div{
+        padding-left: 10px;
+        padding-right: 10px;
     }
     input, select, textarea{
-        background-color: $bgcolor-body;
+        background-color: rgba(212, 195, 177, 0.938) !important;
         padding-left: ($paddingBase)-10;
     }
     
