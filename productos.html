@@ -8,11 +8,19 @@
     <meta name="keywords" content="GARDEN MARKET, HOGAR, ARTICULOS, JARDIN, SILLAS, SILLONES, REPOSERAS,  ORGANIZADORES">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden Market - Productos</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="./css/main.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    
+    <!--Link CDN de Animate on Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -50,82 +58,116 @@
             <h1 class="prologo__titulo">Nuestros Productos</h1>
             <p>Conoce los increíbles productos que tenemos a nuestra disposición!</p>
         </div>
-        <div class="container-fluid">
-        <div class="productos">
-            <div class="row productos__secciones">
-                <div class="col-md productos__secciones--titulo">
-                    <h5>Sillones</h5> 
+        <div class="container mt-3">
+            <div class="row productos">
+               
+                <div class="col-md-8">
+                        <div class="productos__titulo">
+                            <h5>Sillones</h5>
+                        </div>
+                        <div>
+                            <p> Nuestros sillones estan hechos con polipropileno, un material que no se calienta y es muy resistente. Al ser plástico virgen, el sillón puede estar todo el día afuera y va a seguir manteniendo su color. Los sillones vienen acompañados por mesas ratonas para maximizar la comodidad.</p>
+                        </div>
+                        <div>
+                            <ol>
+                                <li>Sillón Miami</li>
+                                <li>Sillón Skarpo</li>
+                                <li>Sillón Eames</li>
+                             </ol>
+                        </div>             
+
+                    </div>
+                <div class="col-md-4 productos__img" data-aos="fade-left">
+                    <img class="img-fluid h-100" src="./imagenes/productos_skarpo.jpeg" alt="Sillón Skarpo">
                 </div>
-                <div class="col-md">
-                    <p> Nuestros sillones estan hechos con polipropileno, un material que no se calienta y es muy resistente. Al ser plástico virgen, el sillón puede estar todo el día afuera y va a seguir manteniendo su color. Los sillones vienen acompañados por mesas ratonas para maximizar la comodidad.</p>
                 </div>
-                <div class="col-md">
-                    <ol>
-                        <li>Sillón Miami</li>
-                        <li>Sillón Skarpo</li>
-                        <li>Sillón Eames</li>
-                     </ol>
-                </div>
-            </div>
-            <div class="row productos__secciones">
-                <div class="col-md productos__secciones--titulo">
-                    <h5>Sillas</h5> 
-                </div>
-                <div class="col-md">
-                    <p>Tenemos una gran variedad de sillas, cada una con características distintivas. Las sillas se dividen en dos grupos: las de plástico y las de metal. Las de plástico estan conformadas por polipropileno al igual que los sillones, y según el modelo puede traer patas de madera, de caño o de plástico. Las sillas metálicas son de aluminio y toda su estructura es metálica.</p>
-                </div>
-                <div class="col-md">
-                    <ol>
-                        <li>Silla Eames</li>
-                        <li>Silla Boston</li>
-                        <li>Silla Nucha</li>
-                        <li>Silla Allegra</li>
-                        <li>Silla Tolix</li>
-                    </ol>
-                </div>
+        </div>
+
+            <div class="container mt-3">
+                <div class="row productos">
+                   
+                    <div class="col-md-8">
+                            <div class="productos__titulo">
+                                <h5>Sillas</h5>
+                            </div>
+                            <div>
+                                <p>Tenemos una gran variedad de sillas, cada una con características distintivas. Las sillas se dividen en dos grupos: las de plástico y las de metal. Las de plástico estan conformadas por polipropileno al igual que los sillones, y según el modelo puede traer patas de madera, de caño o de plástico. Las sillas metálicas son de aluminio y toda su estructura es metálica.</p>
+                            </div>
+                            <div>
+                                <ol>
+                                    <li>Silla Eames</li>
+                                    <li>Silla Boston</li>
+                                    <li>Silla Nucha</li>
+                                    <li>Silla Allegra</li>
+                                    <li>Silla Tolix</li>
+                                </ol>
+                            </div>             
+    
+                        </div>
+                    <div class="col-md-4 productos__img" data-aos="fade-left">
+                        <img class="img-fluid h-100" src="./imagenes/productos__tulip.jpeg" alt="Silla Tulip">
+                    </div>
+                    </div>
             </div>
 
-             <div class="row productos__secciones">
-                <div class="col-md productos__secciones--titulo">
-                    <h5>Jardin</h5> 
-                </div>
-                <div class="col-md">
-                    <p>Nuestra empresa se especializa en muebles para jardín. Dentro de nuestro catálogo se pueden encontrar reposeras pileteras y playeras, mesas ratonas, camas elásticas, mesas para exterior y mucho más!</p>
-                </div>
-                <div class="col-md">
-                    <ol>
-                        <li>Reposera Toronto</li>
-                        <li>Reposera Hawai</li>
-                        <li>Mesita Puket</li>
-                        <li>Mesita Sunset</li>
-                        <li>Cama Elástica 2mts</li>
-                        <li>Mesa Borneo</li>
-                        <li>Mesa Blackjack</li>
-                    </ol>
-                </div>
+            <div class="container mt-3">
+                <div class="row productos">
+                   
+                    <div class="col-md-8">
+                            <div class="productos__titulo">
+                                <h5>Jardín</h5>
+                            </div>
+                            <div>
+                                <p>Nuestra empresa se especializa en muebles para jardín. Dentro de nuestro catálogo se pueden encontrar reposeras pileteras y playeras, mesas ratonas, camas elásticas, mesas para exterior y mucho más!</p>
+                            </div>
+                            <div>
+                                <ol>
+                                    <li>Reposera Toronto</li>
+                                    <li>Reposera Hawai</li>
+                                    <li>Mesita Puket</li>
+                                    <li>Mesita Sunset</li>
+                                    <li>Cama Elástica 2mts</li>
+                                    <li>Mesa Borneo</li>
+                                    <li>Mesa Blackjack</li>
+                                </ol>
+                            </div>             
+    
+                        </div>
+                    <div class="col-md-4 productos__img" data-aos="fade-left">
+                        <img class="img-fluid h-100" src="./imagenes/productos__toronto.jpeg" alt="Reposera Toronto">
+                    </div>
+                    </div>
+            </div>
+
+            <div class="container mt-3">
+                <div class="row productos">
+                   
+                    <div class="col-md-8">
+                            <div class="productos__titulo">
+                                <h5>Otros</h5>
+                            </div>
+                            <div>
+                                <p>Últimamente comenzamos a fabricar organizadores, baldes y macetas. Los mismos son de muchos tamaños y colores, con o sin rueditas y/o manijas. Si tenes en mente algún organizador, seguramente lo puedas encontrar aca!</p>
+                            </div>
+                            <div>
+                                <ol>
+                                    <li>Organizador Heavy Box</li>
+                                    <li>Organizador Eco Box</li>
+                                    <li>Organizador Roller Box</li>
+                                    <li>Balde 9Lts</li>
+                                    <li>Balde Mega Recipiente</li>
+                                    <li>Maceta Auto Regante</li>
+                                    <li>Maceta Chica/Mediana</li>
+                                </ol>
+                            </div>             
+    
+                        </div>
+                    <div class="col-md-4 productos__img" data-aos="fade-left">
+                        <img class="img-fluid h-100" src="./imagenes/productos__otros.jpeg" alt="Otros Productos">
+                    </div>
+                    </div>
             </div>
             
-            <div class="row productos__secciones">
-                <div class="col-md productos__secciones--titulo">
-                    <h5>Otros</h5> 
-                </div>
-                <div class="col-md">
-                    <p>Últimamente comenzamos a fabricar organizadores, baldes y macetas. Los mismos son de muchos tamaños y colores, con o sin rueditas y/o manijas. Si tenes en mente algún organizador, seguramente lo puedas encontrar aca!</p>
-                </div>
-                <div class="col-md">
-                    <ol>
-                        <li>Organizador Heavy Box</li>
-                        <li>Organizador Eco Box</li>
-                        <li>Organizador Roller Box</li>
-                        <li>Balde 9Lts</li>
-                        <li>Balde Mega Recipiente</li>
-                        <li>Maceta Auto Regante</li>
-                        <li>Maceta Chica/Mediana</li>
-                    </ol>
-                </div>
-            </div>
-
-
         </div>
 
         </div>
@@ -145,7 +187,9 @@
       </div>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

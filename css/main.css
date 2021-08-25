@@ -21,21 +21,6 @@ nav {
   background-color: #345153;
 }
 
-.pie {
-  background-color: #345153;
-  color: white;
-  padding: 15px 10px;
-  margin-top: 15px;
-}
-
-.pie__titulo {
-  font-weight: bold;
-}
-
-.pie__contactos {
-  font-weight: lighter;
-}
-
 form {
   border: 2px solid;
   margin: 15px 10px;
@@ -52,7 +37,14 @@ form input, form select, form textarea {
   padding-left: 5px;
 }
 
-/*---------------------------------------------------------------------------------------------------*/
+form .btn {
+  background-color: #52a7ad;
+}
+
+form .btn:hover {
+  background-color: #345153;
+}
+
 h2 {
   font-size: 30px;
 }
@@ -61,11 +53,26 @@ h3, h4 {
   font-size: 20px;
 }
 
-/*---------------------------------------------------------------------------------------------------*/
+.pie {
+  background-color: #345153;
+  color: white;
+  padding: 15px 10px;
+  margin-top: 15px;
+}
+
+.pie__titulo {
+  font-weight: bold;
+}
+
+.pie__contactos {
+  font-weight: lighter;
+}
+
 .prologo {
   background-color: #dfcec1;
   padding: 10px;
   border-bottom: 2px solid #dacab6;
+  text-align: center;
 }
 
 .prologo__titulo {
@@ -101,6 +108,15 @@ h3, h4 {
 
 .galeria__productos {
   font-weight: bold;
+  color: white;
+}
+
+.card .card-body {
+  background-color: #dfcec1;
+}
+
+.card .card-footer {
+  background-color: #D4F1F4;
 }
 
 .historia {
@@ -112,45 +128,43 @@ h3, h4 {
 }
 
 .productos {
-  margin: 10px;
+  overflow: hidden;
 }
 
-.productos .col-md {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.productos__secciones {
+.productos .col-md-8 {
+  padding-left: 0;
+  padding-right: 0;
   border: 2px solid black;
-  margin-top: 10px;
 }
 
-.productos__secciones--titulo {
+.productos .col-md-8 div {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.productos__titulo {
   background-color: #dfcec1;
 }
 
-.alertaContacto h5 {
-  font-weight: bold;
-}
-
-.alertaContacto__boton {
-  background-color: #345153;
-}
-
 /*-----------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 576px) {
-  .galeria {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    max-width: 700px;
-    max-height: 700px;
+@media only screen and (max-width: 768px) {
+  .galeria-carousel {
+    margin: 15px 0;
+  }
+  .productos__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .productos__img img {
+    margin-top: 15px;
+    max-height: 80% !important;
   }
 }
 
