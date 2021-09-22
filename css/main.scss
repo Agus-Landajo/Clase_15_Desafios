@@ -129,6 +129,9 @@ h3, h4 {
 //Estilos de la seccion sobre nosotros
 .historia{
     padding: ($paddingBase)-5;
+    &__contenedor{
+        padding: 3rem 0rem;
+    }
     &__titulo{
         font-weight: $font-bold;
         
@@ -143,6 +146,7 @@ h3, h4 {
         padding-right: 0;
         border: 2px solid black;
         div{
+            align-self: center;
             padding-left: 2rem;
             padding-right: 2rem;
         }
@@ -150,6 +154,8 @@ h3, h4 {
     }
     &__titulo{
        background-color: $bgcolor-secundario;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
         
     }
 }
